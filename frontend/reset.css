@@ -1,0 +1,40 @@
+/* leszedi az összes felesleges css-t elemet*/
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+  background: transparent;
+  font-family: inherit;
+}
+
+/* a linkekről leveszi az aláhúzást */
+a {
+  text-decoration: none;
+}
+
+/* leveszi a képek borderét */
+a img {
+  border: none;
+}
+
+/* a gomb kinézete a nyomó ujj és örökli a színeket */
+button,
+a {
+  cursor: pointer;
+  color: inherit;
+}
+
+/* a szövegmezőnek amibe lehet írni, a méretezés letiltása (végtelenségig lehetne) */
+textarea {
+  resize: none;
+}
+
+border radius levétele button,
+textarea,
+select {
+  appearance: none !important;
+  border-radius: 0;
+}
